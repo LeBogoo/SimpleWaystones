@@ -1,0 +1,12 @@
+name: SimpleWaystones
+version: "${project.version}"
+main: me.lebogo.simplewaystones.SimpleWaystones
+api-version: 1.20
+prefix: SW
+authors: [LeBogo]
+description: Adds Waystones to your Server that players can create and use.
+website: https://lebogo.me
+commands:
+  simplewaystones:
+    description: Configuration command for SimpleWaystones
+    usage: /simplewaystones
