@@ -13,6 +13,7 @@ import org.bukkit.configuration.serialization.ConfigurationSerializable;
 import org.bukkit.configuration.serialization.SerializableAs;
 import org.jetbrains.annotations.NotNull;
 
+import me.lebogo.simplewaystones.WaystoneManager;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.TextComponent;
 
@@ -83,6 +84,10 @@ public class Waystone implements ConfigurationSerializable {
 
     public Location getLocation() {
         return location;
+    }
+
+    public boolean validate() {
+        return WaystoneManager.detectWaystoneStructure(location);
     }
 
     public Material getMaterial() {

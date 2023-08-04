@@ -51,7 +51,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.3.1</version>
                 <configuration>
-                    <outputDirectory>Z:\MinecraftServers\NewServer\plugins</outputDirectory>
+                    <outputDirectory>Z:\MinecraftServers\EileenServer\plugins</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

@@ -91,6 +91,14 @@ public class InventoryClickListener implements Listener {
             return;
         }
 
+        if (!waystone.validate()) {
+            Component message = Component.text("This waystone is broken.");
+            message = message.color(TextColor.color(0xF75353));
+
+            player.sendMessage(message);
+            return;
+        }
+
         player.teleport(waystone.getLocation().clone().add(0.5, 1, 0.5));
 
         Component message = Component.text("You have been teleported to " + waystone.getName() + "!");
