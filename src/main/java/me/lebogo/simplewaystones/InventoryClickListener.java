@@ -128,11 +128,8 @@ public class InventoryClickListener implements Listener {
             }
 
             if (waystone.getLocation().getBlockX() != x) {
-                System.out.println("a");
                 continue;
             }
-
-            System.out.println("b");
 
             if (waystone.getLocation().getBlockY() != y) {
                 continue;

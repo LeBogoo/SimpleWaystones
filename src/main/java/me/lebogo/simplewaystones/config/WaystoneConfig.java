@@ -42,7 +42,6 @@ public class WaystoneConfig {
 
         for (Waystone waystoneInList : waystones) {
             if (waystoneInList.getLocation().getBlock().equals(waystone.getLocation().getBlock())) {
-                System.out.println("Removing waystone " + waystoneInList);
                 waystones.remove(waystoneInList);
                 break;
             }

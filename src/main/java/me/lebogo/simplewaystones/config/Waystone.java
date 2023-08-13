@@ -47,12 +47,10 @@ public class Waystone implements ConfigurationSerializable {
         Block signBlock = location.clone().add(0, -2, 0).getBlock();
 
         if (!signBlock.getType().name().endsWith("SIGN")) {
-            System.out.println("Block is not a sign.");
             return name;
         }
 
         if (!(signBlock.getState() instanceof Sign)) {
-            System.out.println("Block state is not a sign.");
             return name;
         }
 
