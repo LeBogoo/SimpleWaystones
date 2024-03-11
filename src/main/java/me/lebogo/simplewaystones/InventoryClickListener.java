@@ -99,7 +99,9 @@ public class InventoryClickListener implements Listener {
             return;
         }
 
-        player.teleport(waystone.getLocation().clone().add(0.5, 1, 0.5));
+        player.closeInventory();
+        Teleporter teleporter = new Teleporter(player, waystone.getLocation().clone().add(0.5, 1, 0.5));
+        teleporter.teleport();
 
         Component message = Component.text("You have been teleported to " + waystone.getName() + "!");
         message = message.color(TextColor.color(0x54FB54));
@@ -113,7 +115,7 @@ public class InventoryClickListener implements Listener {
         ItemMeta itemMeta = item.getItemMeta();
         List<Component> lore = itemMeta.lore();
 
-        String coordinateLine = ((TextComponent) lore.get(0)).content();
+        String coordinateLine = ((TextComponent) lore.get(0)).content().replace("Position: ", "");
         String[] coordinateLineSplit = coordinateLine.split(", ");
         int x = Integer.parseInt(coordinateLineSplit[0]);
         int y = Integer.parseInt(coordinateLineSplit[1]);
