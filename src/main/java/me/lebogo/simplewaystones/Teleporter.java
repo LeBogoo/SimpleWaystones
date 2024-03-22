@@ -49,7 +49,7 @@ public class Teleporter {
             @Override
             public void run() {
                 BossBar manaBossBar = Bukkit.createBossBar("Charging up mana...", BarColor.PURPLE, BarStyle.SEGMENTED_10);
-                player.playSound(player, Sound.BLOCK_PORTAL_TRIGGER, SoundCategory.MASTER, 1, 1);
+                player.playSound(player, Sound.BLOCK_PORTAL_TRIGGER, SoundCategory.BLOCKS, 1, 1);
                 manaBossBar.setProgress(0.0);
                 manaBossBar.addPlayer(player);
                 for (int i = 0; i < 100; i++) {
@@ -76,7 +76,7 @@ public class Teleporter {
 
                 manaBossBar.removeAll();
 
-                player.playSound(player, Sound.ENTITY_ENDER_DRAGON_FLAP, SoundCategory.MASTER, 1, 1);
+                player.playSound(player, Sound.ENTITY_ENDER_DRAGON_FLAP, SoundCategory.BLOCKS, 1, 1);
                 startLocation.getWorld().spawnParticle(Particle.CLOUD, player.getLocation(), 500);
 
 
@@ -124,7 +124,7 @@ public class Teleporter {
                     player.setFallDistance(0);
                     player.teleport(target);
                 });
-                player.playSound(player, Sound.BLOCK_PORTAL_TRAVEL, SoundCategory.MASTER, 1, 1);
+                player.playSound(player, Sound.BLOCK_PORTAL_TRAVEL, SoundCategory.BLOCKS, 1, 1);
 
 
                 try {

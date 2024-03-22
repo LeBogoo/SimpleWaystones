@@ -73,7 +73,7 @@ public class Waystone implements ConfigurationSerializable {
             name = combined;
         }
 
-        if (name.length() >= 20) {
+        if (name.length() > 20) {
             name = combined.substring(0, 20) + "...";
         }
 
