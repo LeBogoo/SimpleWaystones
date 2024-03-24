@@ -43,7 +43,16 @@ public class WaystoneManager {
         lightBlocks.add(Material.SCULK_CATALYST);
         lightBlocks.add(Material.MAGMA_BLOCK);
         lightBlocks.add(Material.SCULK_SENSOR);
-        lightBlocks.add(Material.RESPAWN_ANCHOR); // TODO - Experimental!!
+
+        // TODO - Experimental!!
+        lightBlocks.add(Material.COPPER_BULB);
+        lightBlocks.add(Material.EXPOSED_COPPER_BULB);
+        lightBlocks.add(Material.WEATHERED_COPPER_BULB);
+        lightBlocks.add(Material.OXIDIZED_COPPER_BULB);
+        lightBlocks.add(Material.WAXED_COPPER_BULB);
+        lightBlocks.add(Material.WAXED_EXPOSED_COPPER_BULB);
+        lightBlocks.add(Material.WAXED_WEATHERED_COPPER_BULB);
+        lightBlocks.add(Material.WAXED_OXIDIZED_COPPER_BULB);
 
         return lightBlocks;
     }
